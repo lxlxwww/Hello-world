@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World - CSS 480</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>Welcome to my CSS 4880 website</h1>
+  <p>Hi, I'm Lok Chan, a student has a interest in Computer Science and Sports.</p>
+  <img src="image/me.jpg" alt =" A photo of me in a volleyball tourament">
+
+  <div id="interests" class="content">
+    <h2>Interests</h2>
+    <p>Here are a few things I enjoy:</p>
+    <ol id="interestList">
+      <li>Playing volleyball</li>
+      <li>Watching sci-fi movies</li>
+      <li>Exploring HCI tools</li>
+      <li>Drawing and sketching</li>
+    </ol>
+    <button onclick="resetList()">Sort by Original Order</button>
+    <button onclick="sortAlphabetically()">Sort A-Z</button>
+    <button onclick="shuffleList()">Sort Randomly</button>
+  </div>
+  
+  
+  <script>
+    const originalItems = [
+      "Playing volleyball",
+      "Watching sci-fi movies",
+      "watching sports",
+      "Cooking"
+    ];
+
+    const listElement = document.getElementById("interestList");
+
+    function renderList(items) {
+      listElement.innerHTML = "";
+      items.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        listElement.appendChild(li);
+      });
+    }
+
+    function resetList() {
+      renderList(originalItems);
+    }
+
+    function sortAlphabetically() {
+      const sorted = [...originalItems].sort((a, b) => a.localeCompare(b));
+      renderList(sorted);
+    }
+    
+    function shuffleList() {
+        const shuffled = [...originalItems];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Swap
+        }
+        renderList(shuffled);
+      }
+
+
+    // Load original order on page load
+    resetList();
+  </script>
+</body>
+</html>
