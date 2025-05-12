@@ -1,16 +1,16 @@
 body {
   font-family: Arial, sans-serif;
   margin: 100px;
-  background-color: #ab17be;
-  color: #edf671;
+  background-color: #8454f4;
+  color: #f8e3fc;
 }
 
 h1 {
-  color: #2677e0;
+  color: #ff77cb;
 }
 
 h2 {
-  color: #2677e0;
+  color: #4cf0d2;
   padding-top: 50px;
 }
 
@@ -19,28 +19,25 @@ img {
   margin-top: 10px;
   border-radius: 8px;
   display: block;
-
 }
 
-/* Buttons */
 button {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 6px 12px;
   font-size: 14px;
-  background-color: #121112;
-  color: rgb(247, 245, 247);
+  background-color: #5b2a86;
+  color: #f8e3fc;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffff53;
-  color: rgb(9, 9, 9);
+  background-color: #fa62c0;
+  color: #1a1a1a;
 }
 
-/* List */
 ol {
   padding-left: 20px;
 }
@@ -48,11 +45,12 @@ ol {
 .content {
   margin-bottom: 50px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ffd6f6;
 }
 
 nav {
-  background-color: #0b0b0b;
+  background-color: #1c0f2e;
+  
   padding: 10px;
 }
 
@@ -66,23 +64,21 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #edf671;
+  color: #63ffe3;
 }
 
-
 nav a:focus {
-  outline: 2px dashed orange;
+  outline: 2px dashed #ff6ec7;
 }
 
 ul li a {
-  color: #00FFFF;
-  /* cyan */
+  color: #80d0ff;
   text-decoration: none;
 }
 
 ul li a:hover,
 ul li a:focus {
-  color: #FFD700;
-  /* gold */
+  color: #ffd6f6;
+  /* light pink */
   text-decoration: underline;
 }
