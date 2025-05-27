@@ -3,15 +3,24 @@ body {
   margin: 100px;
   background-color: #8454f4;
   color: #f8e3fc;
+  font-family: 'Quicksand', Arial, sans-serif;
 }
+
 
 h1 {
   color: #ff77cb;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px #3d1265;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #4cf0d2;
-  padding-top: 50px;
+  color: #ffd6f6;
+  font-size: 2rem;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-left: 4px solid #ffff53;
 }
 
 img {
@@ -27,6 +36,7 @@ button {
   padding: 6px 12px;
   font-size: 14px;
   background-color: #5b2a86;
+  /* dreamy violet */
   color: #f8e3fc;
   border: none;
   border-radius: 4px;
@@ -36,8 +46,11 @@ button {
 button:hover {
   background-color: #fa62c0;
   color: #1a1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #fa62c0;
 }
 
+/* List */
 ol {
   padding-left: 20px;
 }
@@ -50,7 +63,7 @@ ol {
 
 nav {
   background-color: #1c0f2e;
-  
+  /* deep purple */
   padding: 10px;
 }
 
@@ -65,6 +78,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #63ffe3;
+  /* bright teal */
 }
 
 nav a:focus {
@@ -73,6 +87,7 @@ nav a:focus {
 
 ul li a {
   color: #80d0ff;
+  /* soft neon blue */
   text-decoration: none;
 }
 
@@ -81,4 +96,56 @@ ul li a:focus {
   color: #ffd6f6;
   /* light pink */
   text-decoration: underline;
+}
+
+
+.inline-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffd6f6;
+}
+
+
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gundam-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gundam-gallery img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.gundam-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.img-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #dbdbb9;
 }
